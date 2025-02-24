@@ -875,7 +875,7 @@ button {
 
     .logomarca img {
       max-height: 70px;
-      margin-left: 100px;
+      margin-left: 90px;
     }
 
     .conteudo-topo-cabecalho {
@@ -893,7 +893,7 @@ button {
       width: 160px;
       min-height: 40px;            
       font-size: 15px;
-      padding: 0.5rem 1rem;
+      padding: 0.4rem 1rem;
       margin: 0 auto; /* Centraliza horizontalmente */
     }
     
