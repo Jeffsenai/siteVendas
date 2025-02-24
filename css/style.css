@@ -857,7 +857,7 @@ button {
     text-align: center;
   }
   .conteudo-slide h1 {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
   .conteudo-slide p {
     font-size: 0.7rem;
@@ -869,7 +869,8 @@ button {
       width: 160px;
       min-height: 40px;            
       font-size: 15px;
-      padding: 0.5rem 1rem;        
+      padding: 0.5rem 1rem;   
+      margin-bottom: 5px;     
     }
 
     .logomarca img {
