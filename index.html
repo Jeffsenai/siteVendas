@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Letty Pijamas - Conforto e estilo para suas noites.">
+  <title>Letty Pijamas - Conforto e Estilo</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  
+  <!-- Tela de Carregamento -->
+  <div class="overlay-carregamento" aria-hidden="true">
+    <div class="spinner"></div>
+  </div>
+
+
+
+
+
+  <!-- Cabeçalho -->
+  <header class="cabecalho" role="banner">
+    <!-- Topo do Cabeçalho -->
+    <div class="topo-cabecalho">
+      <div class="container">
+        <div class="conteudo-topo-cabecalho">
+          <span></i> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
+          <nav class="links-cabecalho" aria-label="Informações">
+            <a href="#">Ajuda</a>
+            <a href="#">Rastrear Pedido</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Navegação Principal -->
+    <nav class="cabecalho-principal" role="navigation" aria-label="Menu Principal">
+      <div class="container container-navegacao">
+
+
+        <!-- Logo -->
+        <a href="#" class="logomarca">
+          <img src="img/logo.png" alt="Letty Pijamas">
+        </a>
+
+
+
+        <!-- Menu Principal (inclui Minha Conta e Carrinho para aparecer no mobile) -->
+        <ul class="menu-principal">
+          <li class="item-menu tem-mega-menu">
+            <a href="#" class="link-menu">Feminino</a>
+            <div class="mega-menu">
+              <div class="conteudo-mega-menu">
+                <div class="coluna-mega-menu">
+                  <h4 class="titulo-mega-menu">Coleções</h4>
+                  <a href="#" class="link-mega-menu">Verão</a>
+                  <a href="#" class="link-mega-menu">Outono</a>
+                  <a href="#" class="link-mega-menu">Inverno</a>
+                </div>
+                <div class="coluna-mega-menu">
+                  <h4 class="titulo-mega-menu">Categorias</h4>
+                  <a href="#" class="link-mega-menu">Pijamas</a>
+                  <a href="#" class="link-mega-menu">Camisolas</a>
+                  <a href="#" class="link-mega-menu">Roupões</a>
+                </div>
+                <div class="coluna-mega-menu banner">
+                  <img src="https://source.unsplash.com/300x400/?sleep,women" alt="Banner Feminino" class="banner-mega-menu">
+                  <a href="#" class="link-banner">Ofertas Exclusivas →</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item-menu tem-mega-menu">
+            <a href="#" class="link-menu">Masculino</a>
+            <div class="mega-menu">
+              <div class="conteudo-mega-menu">
+                <div class="coluna-mega-menu">
+                  <h4 class="titulo-mega-menu">Coleções</h4>
+                  <a href="#" class="link-mega-menu">Verão</a>
+                  <a href="#" class="link-mega-menu">Outono</a>
+                  <a href="#" class="link-mega-menu">Inverno</a>
+                </div>
+                <div class="coluna-mega-menu">
+                  <h4 class="titulo-mega-menu">Categorias</h4>
+                  <a href="#" class="link-mega-menu">Pijamas</a>
+                  <a href="#" class="link-mega-menu">Camisetas</a>
+                  <a href="#" class="link-mega-menu">Shorts</a>
+                </div>
+                <div class="coluna-mega-menu banner">
+                  <img src="https://source.unsplash.com/300x400/?sleep,men" alt="Banner Masculino" class="banner-mega-menu">
+                  <a href="#" class="link-banner">Novidades →</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item-menu"><a href="#" class="link-menu">Novidades</a></li>
+          <li class="item-menu"><a href="#" class="link-menu">Ofertas</a></li>
+
+          
+
+
+
+
+        <!-- Ações do Cabeçalho (serão ocultadas no mobile) -->
+        <div class="acoes-cabecalho">
+          <!-- Barra de Pesquisa -->
+          <form class="caixa-pesquisa" action="#" method="GET">
+            <input 
+              type="search" 
+              name="q" 
+              placeholder="Buscar produtos..." 
+              class="input-pesquisa" 
+              aria-label="Buscar produtos"
+            >
+            <button type="submit" class="btn-pesquisa" aria-label="Pesquisar">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+
+          <div class="icones-acao">
+            <a href="#" class="link-acao conta" aria-label="Minha Conta">
+              <i class="far fa-user" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="link-acao carrinho" aria-label="Carrinho de Compras">
+              <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+              <span class="contador-carrinho">0</span>
+            </a>
+          </div>
+        </div>
+
+
+
+        <!-- Menu Hamburguer -->
+        <button type="button" class="menu-hamburguer" aria-label="Menu">
+          <span class="linha-hamburguer"></span>
+          <span class="linha-hamburguer"></span>
+          <span class="linha-hamburguer"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  
+
+
+
+  <!-- Conteúdo Principal -->
+  <main>
+
+
+
+
+    <!-- Seção Hero -->
+    <section class="heroi" aria-label="Destaque Principal">
+      <div class="slider-heroi">
+        <div class="slide active">
+          <div class="conteudo-slide">
+            <h1>Seu sono merece o melhor conforto</h1>
+            <p>Confira a Nova Coleção da Letty Pijamas </p>
+            <a href="#" class="btn btn--primary">Ver Coleção</a>
+          </div>
+          <img src="img/banner.png" alt="Coleção de Pijamas" class="imagem-slide">
+        </div>
+        <div class="slide">
+          <div class="conteudo-slide">
+          </div>
+          <img src="img/banner2.png" alt="Durma Bem" class="imagem-slide">
+        </div>
+      </div>
+      <div class="controles-slider">
+        <button type="button" class="prev" aria-label="Slide Anterior">
+          <i class="fas fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="next" aria-label="Próximo Slide">
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- Coleções em Destaque -->
+    <section class="colecoes-destaque" aria-label="Coleções em Destaque">
+      <div class="container">
+        <div class="grade-colecoes">
+          <article class="cartao-colecao feminino" style="background-image: url('img/pijamaFem.jpg');">
+            <div class="overlay-colecao">
+              <h2>Coleção Feminina</h2>
+              <a href="#" class="btn btn--primary">Explorar</a>
+            </div>
+          </article>
+          <article class="cartao-colecao masculino" style="background-image: url('img/pijama.jpg');">
+            <div class="overlay-colecao">
+              <h2>Coleção Masculina</h2>
+              <a href="#" class="btn btn--primary">Explorar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- Produtos em Destaque -->
+    <section class="produtos-destaque" aria-label="Produtos em Destaque">
+      <div class="container">
+        <h2 class="titulo-secao">Lançamentos</h2>
+        <div class="grade-produtos">
+          <!-- Cartão Produto 1 -->
+          <article class="cartao-produto">
+            <div class="imagem-produto">
+              <img src="img/camisa.jpg" alt="Pijama Casual">
+              <div class="acoes-produto">
+                <button type="button" class="visualizar-rapido" aria-label="Visualizar">
+                  <i class="fas fa-expand" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="adicionar-favoritos" aria-label="Favoritar">
+                  <i class="far fa-heart" aria-hidden="true"></i>
+                </button>
+              </div>
+              <span class="selo-desconto">-20%</span>
+            </div>
+            <div class="info-produto">
+              <h3>PRODUTO</h3>
+              <div class="preco">
+                <span class="preco-atual">R$ 89,90</span>
+                <span class="preco-antigo">R$ 112,90</span>
+              </div>
+              <!-- Botão local (adicionar no carrinho) -->
+              <button type="button" class="adicionar-carrinho btn btn--primary">Adicionar</button>
+            </div>
+          </article>
+          <!-- Cartão Produto 2 -->
+          <article class="cartao-produto">
+            <div class="imagem-produto">
+              <img src="img/camisa.jpg" alt="Camisola Elegante">
+              <div class="acoes-produto">
+                <button type="button" class="visualizar-rapido" aria-label="Visualizar">
+                  <i class="fas fa-expand" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="adicionar-favoritos" aria-label="Favoritar">
+                  <i class="far fa-heart" aria-hidden="true"></i>
+                </button>
+              </div>
+              <span class="selo-desconto">-15%</span>
+            </div>
+            <div class="info-produto">
+              <h3>PRODUTO</h3>
+              <div class="preco">
+                <span class="preco-atual">R$ 149,90</span>
+                <span class="preco-antigo">R$ 175,90</span>
+              </div>
+              <button type="button" class="adicionar-carrinho btn btn--primary">Adicionar</button>
+            </div>
+          </article>
+          <!-- Cartão Produto 3 -->
+          <article class="cartao-produto">
+            <div class="imagem-produto">
+              <img src="img/camisa.jpg" alt="Roupão Macio">
+              <div class="acoes-produto">
+                <button type="button" class="visualizar-rapido" aria-label="Visualizar">
+                  <i class="fas fa-expand" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="adicionar-favoritos" aria-label="Favoritar">
+                  <i class="far fa-heart" aria-hidden="true"></i>
+                </button>
+              </div>
+              <span class="selo-desconto">-25%</span>
+            </div>
+            <div class="info-produto">
+              <h3>PRODUTO</h3>
+              <div class="preco">
+                <span class="preco-atual">R$ 199,90</span>
+                <span class="preco-antigo">R$ 266,90</span>
+              </div>
+              <button type="button" class="adicionar-carrinho btn btn--primary">Adicionar</button>
+            </div>
+          </article>
+          <!-- Cartão Produto 4 -->
+          <article class="cartao-produto">
+            <div class="imagem-produto">
+              <img src="img/camisa.jpg" alt="Calça Conforto">
+              <div class="acoes-produto">
+                <button type="button" class="visualizar-rapido" aria-label="Visualizar">
+                  <i class="fas fa-expand" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="adicionar-favoritos" aria-label="Favoritar">
+                  <i class="far fa-heart" aria-hidden="true"></i>
+                </button>
+              </div>
+              <span class="selo-desconto">-10%</span>
+            </div>
+            <div class="info-produto">
+              <h3>PRODUTO</h3>
+              <div class="preco">
+                <span class="preco-atual">R$ 129,90</span>
+                <span class="preco-antigo">R$ 144,90</span>
+              </div>
+              <button type="button" class="adicionar-carrinho btn btn--primary">Adicionar</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Banner Promocional -->
+    <section class="banner-promo" aria-label="Promoção Especial">
+      <div class="container">
+        <div class="conteudo-banner">
+          <h2>Black Week Letty</h2>
+          <p>Descontos de até 60% em toda a loja!</p>
+          <div class="contador" aria-label="Contagem Regressiva">
+            <div class="item-contador">
+              <span class="numero" id="days">00</span>
+              <span class="rotulo">Dias</span>
+            </div>
+            <div class="item-contador">
+              <span class="numero" id="hours">00</span>
+              <span class="rotulo">Horas</span>
+            </div>
+            <div class="item-contador">
+              <span class="numero" id="minutes">00</span>
+              <span class="rotulo">Minutos</span>
+            </div>
+            <div class="item-contador">
+              <span class="numero" id="seconds">00</span>
+              <span class="rotulo">Segundos</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn--primary">Aproveite Agora</a>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Depoimentos -->
+    <section class="depoimentos" aria-label="Depoimentos dos Clientes">
+      <div class="container">
+        <h2 class="titulo-secao">O que nossos clientes dizem</h2>
+        <div class="grade-depoimentos">
+          <article class="cartao-depoimento">
+            <div class="info-cliente">
+              <img src="img/pessoa1.jpg" alt="Cliente 1">
+              <div class="detalhes-cliente">
+                <h4>Maria Oliveira</h4>
+                <span>Curitiba, PR</span>
+              </div>
+            </div>
+            <p>"Os produtos são de altíssima qualidade e o atendimento é excepcional. Recomendo a todos!"</p>
+            <div class="avaliacao">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+          </article>
+          <article class="cartao-depoimento">
+            <div class="info-cliente">
+              <img src="img/pessoa2.jpg" alt="Cliente 2">
+              <div class="detalhes-cliente">
+                <h4>Fernanda Silva</h4>
+                <span>São Paulo, SP</span>
+              </div>
+            </div>
+            <p>"Experiência de compra incrível! Design moderno e produtos que realmente impressionam."</p>
+            <div class="avaliacao">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+          </article>
+          <article class="cartao-depoimento">
+            <div class="info-cliente">
+              <img src="img/pessoa3.jpg" alt="Cliente 3">
+              <div class="detalhes-cliente">
+                <h4>Carlos Mendes</h4>
+                <span>Porto Alegre, RS</span>
+              </div>
+            </div>
+            <p>"Variedade, qualidade e preços competitivos. Uma das melhores lojas que já conheci!"</p>
+            <div class="avaliacao">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Blog -->
+    <section class="blog" aria-label="Últimas do Blog">
+      <div class="container">
+        <h2 class="titulo-secao">Últimas do Blog</h2>
+        <div class="grade-blog">
+          <article class="post-blog">
+            <img src="img/blog1.jpg" alt="Post do Blog">
+            <div class="info-post">
+              <span class="categoria-post">Tendências</span>
+              <h3>As Principais Tendências em Pijamas</h3>
+              <a href="#" class="ler-mais">Leia Mais <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+          <article class="post-blog">
+            <img src="img/blog2.jpg" alt="Post do Blog">
+            <div class="info-post">
+              <span class="categoria-post">Dicas</span>
+              <h3>Como Escolher o Pijama Perfeito</h3>
+              <a href="#" class="ler-mais">Leia Mais <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+          <article class="post-blog">
+            <img src="img/blog3.jpg" alt="Post do Blog">
+            <div class="info-post">
+              <span class="categoria-post">Seu sono</span>
+              <h3>Melhore Suas Noites de Sono</h3>
+              <a href="#" class="ler-mais">Leia Mais <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+  <!-- Rodapé -->
+  <footer class="rodape" role="contentinfo">
+    <div class="container">
+      <div class="grade-rodape">
+        <div class="coluna-rodape">
+          <h4 class="titulo-rodape">Institucional</h4>
+          <ul class="links-rodape">
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Nossas Lojas</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+          </ul>
+        </div>
+        <div class="coluna-rodape">
+          <h4 class="titulo-rodape">Ajuda</h4>
+          <ul class="links-rodape">
+            <li><a href="#">Trocas e Devoluções</a></li>
+            <li><a href="#">Formas de Pagamento</a></li>
+            <li><a href="#">Entregas</a></li>
+          </ul>
+        </div>
+        <div class="coluna-rodape">
+          <h4 class="titulo-rodape">Atendimento</h4>
+          <div class="contato-rodape">
+            <p><i class="fas fa-phone" aria-hidden="true"></i> (11) 99999-9999</p>
+            <p><i class="fas fa-envelope" aria-hidden="true"></i> contato@letty.com.br</p>
+            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> São Paulo/SP</p>
+          </div>
+        </div>
+        <div class="coluna-rodape">
+          <h4 class="titulo-rodape">Redes Sociais</h4>
+          <div class="redes-sociais" aria-label="Redes Sociais">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="rodape-baixo">
+        <div class="pagamento">
+          <img src="https://source.unsplash.com/300x50/?payment" alt="Formas de Pagamento">
+        </div>
+        <div class="direitos">
+          <p>© 2025 Letty Pijamas. Todos os direitos reservados - CNPJ: 00.000.000/0001-00</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Modal de Visualização Rápida -->
+  <div class="overlay-modal" aria-hidden="true">
+    <div class="produto-modal">
+      <button type="button" class="fechar-modal" aria-label="Fechar">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+      <div class="conteudo-modal"></div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
