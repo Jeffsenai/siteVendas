@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pijamas de Verão - Letty Pijamas.">
+  <title>Pijamas de Verão - Letty Pijamas</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Tela de Carregamento -->
+  <div class="overlay-carregamento" aria-hidden="true">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="cabecalho" role="banner">
+    <!-- Topo do Cabeçalho -->
+    <div class="topo-cabecalho">
+      <div class="container">
+        <div class="conteudo-topo-cabecalho">
+          <span>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
+          <nav class="links-cabecalho" aria-label="Informações">
+            <a href="#">Ajuda</a>
+            <a href="#">Rastrear Pedido</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Navegação Principal -->
+    <nav class="cabecalho-principal" role="navigation" aria-label="Menu Principal">
+      <div class="container container-navegacao">
+        <!-- Logo -->
+        <a href="#" class="logomarca">
+          <img src="img/logo.png" alt="Letty Pijamas">
+        </a>
+        <!-- Menu Principal -->
+        <ul class="menu-principal">
+          <li class="item-menu tem-mega-menu">
+            <a href="#" class="link-menu">Feminino</a>
+            <div class="mega-menu">
+              <div class="conteudo-mega-menu">
+                <div class="coluna-mega-menu">
+                  <h4 class="titulo-mega-menu">Coleções</h4>
+                  <a href="verao.html" class="link-mega-menu">Verão</a>
+                  <a href="#" class="link-mega-menu">Outono</a>
+                  <a href="#" class="link-mega-menu">Inverno</a>
+                </div>
+                <div class="coluna-mega-menu">
+                  <h4 class="titulo-mega-menu">Categorias</h4>
+                  <a href="#" class="link-mega-menu">Pijamas</a>
+                  <a href="#" class="link-mega-menu">Camisolas</a>
+                  <a href="#" class="link-mega-menu">Roupões</a>
+                </div>
+                <div class="coluna-mega-menu banner">
+                  <img src="https://source.unsplash.com/300x400/?sleep,women" alt="Banner Feminino" class="banner-mega-menu">
+                  <a href="#" class="link-banner">Ofertas Exclusivas →</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item-menu tem-mega-menu">
+            <a href="#" class="link-menu">Masculino</a>
+            <div class="mega-menu">
+              <div class="conteudo-mega-menu">
+                <div class="coluna-mega-menu">
+                  <h4 class="titulo-mega-menu">Coleções</h4>
+                  <a href="#" class="link-mega-menu">Verão</a>
+                  <a href="#" class="link-mega-menu">Outono</a>
+                  <a href="#" class="link-mega-menu">Inverno</a>
+                </div>
+                <div class="coluna-mega-menu">
+                  <h4 class="titulo-mega-menu">Categorias</h4>
+                  <a href="#" class="link-mega-menu">Pijamas</a>
+                  <a href="#" class="link-mega-menu">Camisetas</a>
+                  <a href="#" class="link-mega-menu">Shorts</a>
+                </div>
+                <div class="coluna-mega-menu banner">
+                  <img src="https://source.unsplash.com/300x400/?sleep,men" alt="Banner Masculino" class="banner-mega-menu">
+                  <a href="#" class="link-banner">Novidades →</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item-menu"><a href="#" class="link-menu">Novidades</a></li>
+          <li class="item-menu"><a href="#" class="link-menu">Ofertas</a></li>
+        </ul>
+        <!-- Ações do Cabeçalho -->
+        <div class="acoes-cabecalho">
+          <!-- Barra de Pesquisa -->
+          <form class="caixa-pesquisa" action="#" method="GET">
+            <input type="search" name="q" placeholder="Buscar produtos..." class="input-pesquisa" aria-label="Buscar produtos">
+            <button type="submit" class="btn-pesquisa" aria-label="Pesquisar">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+          <div class="icones-acao">
+            <a href="#" class="link-acao conta" aria-label="Minha Conta">
+              <i class="far fa-user" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="link-acao carrinho" aria-label="Carrinho de Compras">
+              <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+              <span class="contador-carrinho">0</span>
+            </a>
+          </div>
+        </div>
+        <!-- Menu Hamburger -->
+        <button type="button" class="menu-hamburguer" aria-label="Menu">
+          <span class="linha-hamburguer"></span>
+          <span class="linha-hamburguer"></span>
+          <span class="linha-hamburguer"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Menu Mobile (oculto por padrão) -->
+  <nav class="menu-mobile">
+    <ul>
+      <li><a href="#">Feminino</a></li>
+      <li><a href="#">Masculino</a></li>
+      <li><a href="#">Novidades</a></li>
+      <li><a href="#">Ofertas</a></li>
+      <li><a href="#">Minha Conta</a></li>
+      <li><a href="#">Carrinho</a></li>
+    </ul>
+  </nav>
+
+  <!-- Seção Hero -->
+  <section class="heroi-verao">
+    <div class="container">
+      <div class="conteudo-heroi">
+        <h1>Pijamas de Verão</h1>
+        <p>Desfrute do frescor e do conforto com nossa coleção leve para o verão.</p>
+        <a href="#produtos" class="btn btn--primary">Ver Produtos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Produtos -->
+  <main id="produtos">
+    <section class="produtos-destaque">
+      <div class="container">
+        <h2 class="titulo-secao">Nossa Seleção</h2>
+        <div class="grade-produtos">
+          <!-- Exemplo de Cartão de Produto -->
+          <article class="cartao-produto">
+            <a href="produto.html?id=1" class="link-produto">
+              <div class="imagem-produto">
+                <img src="https://source.unsplash.com/800x600/?pajamas,summer,1" alt="Pijama Estampado">
+              </div>
+              <div class="info-produto">
+                <h3>Pijama Estampado</h3>
+                <div class="preco">
+                  <span class="preco-atual">R$ 99,90</span>
+                  <span class="preco-antigo">R$ 129,90</span>
+                </div>
+              </div>
+            </a>
+            <button type="button" class="adicionar-carrinho btn btn--primary">Adicionar</button>
+          </article>
+          <!-- Repetir cartões para outros produtos... -->
+          <article class="cartao-produto">
+            <a href="produto.html?id=2" class="link-produto">
+              <div class="imagem-produto">
+                <img src="https://source.unsplash.com/800x600/?pajamas,summer,2" alt="Pijama Floral">
+              </div>
+              <div class="info-produto">
+                <h3>Pijama Floral</h3>
+                <div class="preco">
+                  <span class="preco-atual">R$ 109,90</span>
+                  <span class="preco-antigo">R$ 139,90</span>
+                </div>
+              </div>
+            </a>
+            <button type="button" class="adicionar-carrinho btn btn--primary">Adicionar</button>
+          </article>
+          <article class="cartao-produto">
+            <a href="produto.html?id=3" class="link-produto">
+              <div class="imagem-produto">
+                <img src="https://source.unsplash.com/800x600/?pajamas,summer,3" alt="Pijama Listrado">
+              </div>
+              <div class="info-produto">
+                <h3>Pijama Listrado</h3>
+                <div class="preco">
+                  <span class="preco-atual">R$ 89,90</span>
+                  <span class="preco-antigo">R$ 119,90</span>
+                </div>
+              </div>
+            </a>
+            <button type="button" class="adicionar-carrinho btn btn--primary">Adicionar</button>
+          </article>
+          <!-- (Adicione quantos produtos desejar) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Banner Promo -->
+    <section class="banner-promo">
+      <div class="container">
+        <div class="conteudo-banner">
+          <h2>Black Week Letty</h2>
+          <p>Descontos imperdíveis para renovar seu conforto!</p>
+          <a href="#" class="btn btn--primary">Aproveitar Agora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section class="depoimentos">
+      <div class="container">
+        <h2 class="titulo-secao">O que nossos clientes dizem</h2>
+        <div class="grade-depoimentos">
+          <article class="cartao-depoimento">
+            <div class="info-cliente">
+              <img src="https://source.unsplash.com/80x80/?person" alt="Cliente 1">
+              <div class="detalhes-cliente">
+                <h4>Maria Oliveira</h4>
+                <span>Curitiba, PR</span>
+              </div>
+            </div>
+            <p>"Pijamas maravilhosos! Conforto e estilo para todas as noites de verão."</p>
+            <div class="avaliacao">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </article>
+          <article class="cartao-depoimento">
+            <div class="info-cliente">
+              <img src="https://source.unsplash.com/80x80/?woman" alt="Cliente 2">
+              <div class="detalhes-cliente">
+                <h4>Fernanda Silva</h4>
+                <span>São Paulo, SP</span>
+              </div>
+            </div>
+            <p>"Adorei a coleção! Leves, frescos e com um design super moderno."</p>
+            <div class="avaliacao">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <h2>Inscreva-se para receber novidades</h2>
+        <form action="#" method="POST">
+          <input type="email" placeholder="Seu e-mail" required>
+          <button type="submit" class="btn btn--primary">Inscrever</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape" role="contentinfo">
+    <div class="container">
+      <div class="grade-rodape">
+        <div class="coluna-rodape">
+          <h4 class="titulo-rodape">Institucional</h4>
+          <ul class="links-rodape">
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Nossas Lojas</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+          </ul>
+        </div>
+        <div class="coluna-rodape">
+          <h4 class="titulo-rodape">Ajuda</h4>
+          <ul class="links-rodape">
+            <li><a href="#">Trocas e Devoluções</a></li>
+            <li><a href="#">Formas de Pagamento</a></li>
+            <li><a href="#">Entregas</a></li>
+          </ul>
+        </div>
+        <div class="coluna-rodape">
+          <h4 class="titulo-rodape">Atendimento</h4>
+          <div class="contato-rodape">
+            <p><i class="fas fa-phone"></i> (47) 99975-0974</p>
+            <p><i class="fas fa-envelope"></i> contato@letty.com.br</p>
+            <p><i class="fas fa-map-marker-alt"></i> Brusque/SC</p>
+          </div>
+        </div>
+        <div class="coluna-rodape">
+          <h4 class="titulo-rodape">Redes Sociais</h4>
+          <div class="redes-sociais">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="rodape-baixo">
+        <div class="pagamento">
+          <img src="https://source.unsplash.com/300x50/?payment" alt="Formas de Pagamento">
+        </div>
+        <div class="direitos">
+          <p>© 2025 Letty Pijamas. Todos os direitos reservados - CNPJ: 00.000.000/0001-00</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

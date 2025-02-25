@@ -1,26 +1,22 @@
 /* ===== VARIÁVEIS ===== */
 :root {
-  /* Cores (baseadas na logo Letty) */
-  --primary: #8dd3b7;   /* Fundo principal (verde-água) */
-  --secondary: #2d2d2d; /* Tom escuro p/ textos maiores */
-  --accent: #ffde59;    /* Amarelo p/ destaque */
+  --primary: #8dd3b7;
+  --secondary: #2d2d2d;
+  --accent: #ffde59;
   --light: #ffffff;
-  --dark: #0c474f;      /* Tom escuro puxado para verde-azulado */
+  --dark: #0c474f;
   --text: #333333;
   --border: #d8eae4;
-
-  /* Fontes */
+  
   --font-primary: 'Inter', sans-serif;
   --font-secondary: 'Playfair Display', serif;
-
-  /* Espaçamentos */
+  
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
   --space-lg: 3rem;
   --space-xl: 4rem;
-
-  /* Sombras e Transições */
+  
   --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
   --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
   --shadow-lg: 0 8px 12px rgba(0,0,0,0.1);
@@ -198,9 +194,6 @@ button {
 }
 
 /* Mega Menu */
-
-
-
 .tem-mega-menu:hover .mega-menu {
   pointer-events: auto;
   opacity: 1;
@@ -254,11 +247,6 @@ button {
 
 .link-banner:hover {
   background: var(--accent);
-}
-
-.tem-mega-menu {
-  width: 100%;
-  position: relative; /* Para que o menu seja posicionado corretamente em relação a ele */
 }
 
 /* Ações do Cabeçalho */
@@ -322,7 +310,62 @@ button {
   justify-content: center;
 }
 
+/* Menu Hamburguer */
+.menu-hamburguer {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  z-index: 1100;
+}
 
+.linha-hamburguer {
+  width: 30px;
+  height: 3px;
+  background: var(--secondary);
+  transition: var(--transition);
+}
+
+/* Menu Mobile – estilo para quando o menu hamburger for ativado */
+.menu-mobile {
+  position: absolute;
+  top: 80px; /* abaixo do header */
+  left: 0;
+  right: 0;
+  background: var(--light);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-mobile.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu-mobile ul {
+  list-style: none;
+  margin: 0;
+  padding: var(--space-md);
+}
+
+.menu-mobile li {
+  margin-bottom: var(--space-sm);
+}
+
+.menu-mobile li:last-child {
+  margin-bottom: 0;
+}
+
+.menu-mobile a {
+  font-size: 1.2rem;
+  color: var(--text);
+  padding: var(--space-sm) 0;
+  display: block;
+}
 
 /* ===== BOTÕES PADRONIZADOS ===== */
 .btn {
@@ -344,122 +387,31 @@ button {
   filter: brightness(1.1);
 }
 
-/* ===== HEROI ===== */
-.heroi {
-  position: relative;
-  height: 90vh;
-  overflow: hidden;
-}
-
-.slider-heroi {
-  position: relative;
-  height: 100%;
-}
-
-.slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.slide.active {
-  opacity: 1;
-}
-
-.imagem-slide {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-.conteudo-slide {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--light);
+/* ===== SEÇÃO HERO (Verão) ===== */
+.heroi-verao {
+  background: var(--primary);
+  padding: var(--space-lg) 0;
   text-align: center;
-  z-index: 2;
 }
 
-.conteudo-slide h1 {
+.conteudo-heroi {
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--dark);
+}
+
+.conteudo-heroi h1 {
+  font-family: var(--font-secondary);
   font-size: 3rem;
   margin-bottom: var(--space-sm);
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
 
-.conteudo-slide p {
+.conteudo-heroi p {
   font-size: 1.2rem;
   margin-bottom: var(--space-md);
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
-/* Controles do Slider */
-.controles-slider {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  z-index: 3;
-  padding: 0 var(--space-md);
-}
-
-.controles-slider button {
-  background: rgba(0,0,0,0.4);
-  color: var(--light);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* ===== COLEÇÕES EM DESTAQUE ===== */
-.colecoes-destaque {
-  padding: var(--space-lg) 0;
-  background: #f9f9f9;
-}
-
-.grade-colecoes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-md);
-}
-
-.cartao-colecao {
-  position: relative;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay-colecao {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.4);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--light);
-  text-align: center;
-}
-
-/* ===== PRODUTOS EM DESTAQUE ===== */
+/* ===== PRODUTOS ===== */
 .produtos-destaque {
   padding: var(--space-lg) 0;
 }
@@ -507,30 +459,9 @@ button {
   position: relative;
 }
 
-.acoes-produto {
-  position: absolute;
-  top: var(--space-sm);
-  right: var(--space-sm);
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  opacity: 0;
-  transition: var(--transition);
-}
-
-.cartao-produto:hover .acoes-produto {
-  opacity: 1;
-}
-
-.selo-desconto {
-  position: absolute;
-  top: var(--space-sm);
-  left: var(--space-sm);
-  background: var(--accent);
-  color: var(--light);
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
+.imagem-produto img {
+  width: 100%;
+  height: auto;
 }
 
 .info-produto {
@@ -568,20 +499,15 @@ button {
   margin: 0 auto;
 }
 
-.contador {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-md);
-  margin: var(--space-lg) 0;
+.conteudo-banner h2 {
+  font-family: var(--font-secondary);
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
 }
 
-.item-contador {
-  text-align: center;
-}
-
-.item-contador .numero {
-  font-size: 2rem;
-  font-weight: bold;
+.conteudo-banner p {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-md);
 }
 
 /* ===== DEPOIMENTOS ===== */
@@ -623,47 +549,47 @@ button {
   color: var(--accent);
 }
 
-/* ===== BLOG ===== */
-.blog {
+/* ===== NEWSLETTER ===== */
+.newsletter {
   padding: var(--space-lg) 0;
-}
-
-.grade-blog {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-md);
-}
-
-.post-blog {
+  text-align: center;
   background: var(--light);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: var(--shadow-sm);
+}
+
+.newsletter h2 {
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  width: 250px;
+  max-width: 100%;
+}
+
+.newsletter button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  background: var(--accent);
+  color: var(--dark);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
   transition: var(--transition);
 }
 
-.post-blog:hover {
-  box-shadow: var(--shadow-md);
-}
-
-.info-post {
-  padding: var(--space-md);
-}
-
-.categoria-post {
-  font-size: 0.9rem;
-  color: var(--accent);
-  text-transform: uppercase;
-  margin-bottom: var(--space-sm);
-}
-
-.ler-mais {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: var(--space-sm);
-  font-weight: 600;
-  color: var(--accent);
+.newsletter button:hover {
+  filter: brightness(1.1);
 }
 
 /* ===== RODAPÉ ===== */
@@ -743,7 +669,7 @@ button {
   color: rgba(255,255,255,0.6);
 }
 
-/* ===== MODAL ===== */
+/* ===== MODAL (se houver) ===== */
 .overlay-modal {
   position: fixed;
   top: 0;
@@ -783,188 +709,48 @@ button {
 }
 
 /* ===== RESPONSIVIDADE ===== */
+
+/* Em telas menores, oculta os elementos de ações (pesquisa, ícones) e exibe o hamburger */
 @media (max-width: 1200px) {
-  .menu-principal {
-    display: none;
-  }
-  .caixa-pesquisa {
-    display: none;
-  }
+  .menu-principal,
+  .caixa-pesquisa,
   .icones-acao {
-    display: none; /* Some ícones de perfil/carrinho no mobile */
+    display: none;
   }
-  
+  .menu-hamburguer {
+    display: flex;
+  }
 }
 
+/* Ajustes para telas de 768px */
 @media (max-width: 768px) {
-
-  
   .container-navegacao {
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  .grade-colecoes {
-    grid-template-columns: 1fr;
-  }
-  .controles-slider button {
-    width: 35px;
-    height: 35px;
   }
   .heroi {
     height: 70vh;
   }
 }
 
+/* Ajustes para telas de 480px */
 @media (max-width: 480px) {
   .grade-produtos,
   .grade-blog,
   .grade-depoimentos {
     grid-template-columns: 1fr;
   }
-}
-
-
-@media (max-width: 480px) {
-  .heroi {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 56.25%; 
-    overflow: hidden;
-  }
-  .slider-heroi,
-  .slide,
-  .imagem-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .conteudo-slide {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0 1rem;
-    text-align: center;
-  }
-  .conteudo-slide h1 {
-    font-size: 1.0rem;
-  }
-  .conteudo-slide p {
-    font-size: 0.7rem;
-  }
-    .btn--primary {
-      display: flex;               
-      align-items: center;         
-      justify-content: center;     
-      width: 160px;
-      min-height: 40px;            
-      font-size: 15px;
-      padding: 0.5rem 1rem;   
-      margin-bottom: 5px;     
-    }
-
-    .logomarca img {
-      max-height: 70px;
-      margin-left: 90px;
-    }
-
-    .conteudo-topo-cabecalho {
-      visibility: collapse;
-    }
-
-    .topo-cabecalho{
-      height: 5px;
-    }
-
-    .btn--primary {
-      display: flex;               
-      align-items: center;         
-      justify-content: center;     
-      width: 160px;
-      min-height: 40px;            
-      font-size: 15px;
-      padding: 0.5rem 1rem;
-      margin: 0 auto; /* Centraliza horizontalmente */
-    }
-    
+  
+  .logomarca img {
+    max-height: 70px;
+    margin-left: 90px;
   }
   
-
-
-
-
-
-
-
-
-  /* Container do menu e botão hamburger */
-.menu-container {
-  position: relative;
-  padding: 1rem;
-}
-
-/* Botão Hamburger */
-.menu-hamburguer {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  z-index: 1100;
-}
-
-/* Linhas do botão */
-.linha-hamburguer {
-  width: 30px;
-  height: 3px;
-  background: var(--hamburger-color);
-  transition: all var(--transition-speed) ease;
-}
-
-/* Menu Mobile – inicialmente oculto */
-.menu-mobile {
-  position: fixed;
-  top: 60px; /* Ajuste conforme a altura do header */
-  left: 0;
-  right: 0;
-  background: var(--background);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
-  transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-/* Menu Mobile ativo */
-.menu-mobile.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-/* Estilização da lista do menu mobile */
-.menu-mobile ul {
-  list-style: none;
-  margin: 0;
-  padding: 1rem;
-}
-
-.menu-mobile li {
-  margin-bottom: 1rem;
-}
-
-.menu-mobile li:last-child {
-  margin-bottom: 0;
-}
-
-.menu-mobile a {
-  font-size: 1.2rem;
-  color: var(--text-color);
-  text-decoration: none;
+  .conteudo-topo-cabecalho {
+    visibility: collapse;
+  }
+  
+  .topo-cabecalho {
+    height: 5px;
+  }
 }
