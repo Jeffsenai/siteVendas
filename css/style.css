@@ -199,20 +199,12 @@ button {
 
 /* Mega Menu */
 
-
-
-.tem-mega-menu:hover .mega-menu {
-  pointer-events: auto;
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
+/* Contêiner do mega menu */
 .mega-menu {
   position: absolute;
-  top: 100%;
+  top: 100%;         /* Abaixo do item de menu */
   left: 0;
-  width: 100%;
+  width: 800%;       /* Ocupa toda a largura do .tem-mega-menu */
   background: var(--light);
   box-shadow: var(--shadow-lg);
   padding: var(--space-lg) 0;
@@ -222,6 +214,17 @@ button {
   transition: var(--transition);
   z-index: 999;
 }
+
+/* Exibir o mega menu ao hover */
+.tem-mega-menu:hover .mega-menu {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+
 
 .conteudo-mega-menu {
   display: grid;
@@ -250,6 +253,7 @@ button {
   background: rgba(0,0,0,0.7);
   padding: 0.5rem 1rem;
   border-radius: 4px;
+  margin-top: 100px;
 }
 
 .link-banner:hover {
