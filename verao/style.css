@@ -199,7 +199,7 @@ button {
   position: absolute;
   top: 100%;         /* Abaixo do item de menu */
   left: 0;
-  width: 800%;       /* Ocupa toda a largura do .tem-mega-menu */
+  width: 900%;       /* Ocupa toda a largura do .tem-mega-menu */
   background: var(--light);
   box-shadow: var(--shadow-lg);
   padding: var(--space-lg) 0;
